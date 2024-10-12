@@ -25,3 +25,4 @@ class LinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Link
         fields = "__all__"
+        read_only_fields = ['supplier_debt', ]
